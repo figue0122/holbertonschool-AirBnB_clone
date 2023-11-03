@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """FileStorage Module"""
 
+from models import amenity
+
+
 class FileStorage:
     """FileStorage class to serialize and deserialize instances"""
     __file_path = "file.json"
@@ -12,7 +15,7 @@ class FileStorage:
         "Place": Place,
         "Review": Review,
         "State": State,
-        "Amenity": Amenity
+        "Amenity": amenity
     }
 
     def all(self):
