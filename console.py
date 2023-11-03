@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 import cmd
-from models import storage
 from models.base_model import BaseModel
+from models.engine.file_storage import FileStorage
+from models import storage
 
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
