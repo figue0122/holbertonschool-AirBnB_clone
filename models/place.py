@@ -21,4 +21,3 @@ class Place(BaseModel):
     def __str__(self):
         """str method\n"""
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
-    
