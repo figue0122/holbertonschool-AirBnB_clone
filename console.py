@@ -2,9 +2,12 @@
 """This module contains the entry point of the command interpreter."""
 
 import cmd
+import argparse
+import json
 from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 from models import storage
+
 
 
 class HBNBCommand(cmd.Cmd):
@@ -14,7 +17,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, args):
         """Quits the console."""
-        return True
+        return 
 
     def help_quit(self):
         """Displays the help documentation for the 'quit' command."""
